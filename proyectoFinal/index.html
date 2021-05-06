@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Proyecto Final</title>
+</head>
+<body>
+    <!-- Head -->
+    <header class="navbar">
+        <div class="container-fluid navbar__container">
+            <a href="" class="navbar__logo"><img src="images/logo-test.png" alt=""></a>
+            <nav class="navbar__menu">
+                <!-- Hamburger -->
+                <div class="navbar__hamburger d-md-none">
+                    <div class="navbar__hamburger-line"></div>
+                    <div class="navbar__hamburger-line"></div>
+                    <div class="navbar__hamburger-line"></div>
+                </div>
+                <!-- Menu -->
+                <ul class="navbar__list d-none d-md-block">
+                    <a class="navbar__list-item" href="#">
+                        <li>Products</li>
+                    </a>
+                    <a class="navbar__list-item" href="#">
+                        <li>About</li>
+                    </a>
+                    <a class="navbar__list-item" href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <ul class="navbar__list navbar__list-mobile d-md-none">
+            <a class="navbar__list-item" href="#">
+                <li>Products</li>
+            </a>
+            <a class="navbar__list-item" href="#">
+                <li>About</li>
+            </a>
+            <a class="navbar__list-item" href="#">
+                <li>Contact</li>
+            </a>
+            <div class="navbar__close">
+                <div class="navbar__close-line"></div>
+                <div class="navbar__close-line"></div>
+            </div>
+        </ul>
+    </header>
+    <main>
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="main__container">
+            <!-- Content -->
+            <section class="hero">
+                <div class="hero__left">
+                    <h1 class="hero__title">Arma tu computadora</h1>
+                    <a href="#" class="hero__cta">Productos</a>
+                </div>
+                <div class="hero__right">
+                    <div id="js-hero__slider" class="hero__slider">
+                        <div class="hero__card">
+                            <img src="images/core-i7.png" alt="" class="hero__card-item">
+                        </div>
+                        <div class="hero__card">
+                            <img src="images/core-i7.png" alt="" class="hero__card-item">
+                        </div>
+                        <div class="hero__card">
+                            <img src="images/core-i7.png" alt="" class="hero__card-item">
+                        </div>
+                        <div class="hero__card">
+                            <img src="images/core-i7.png" alt="" class="hero__card-item">
+                        </div>
+                    </div>
+                    <div class="hero__slider-dots"></div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer__copyright">
+                    <p>Copyright &#169; 2021 Benjamin Leguizamon. All rights reserved.</p>
+                </div>
+                <div class="footer__social">
+                    <a href="" class="footer__icon">
+                        <svg viewBox="0 0 66 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.9564 127.927C13.9564 106.576 13.9564 85.4058 13.9564 64.0181C9.24384 64.0181 4.6763 64.0181 0 64.0181C0 56.7681 0 49.7355 0 42.4854C0.616256 42.4492 1.23251 42.3767 1.88502 42.3767C5.2563 42.3767 8.66383 42.3042 12.0351 42.4129C13.5214 42.4492 14.0289 42.0504 13.9926 40.5279C13.9201 35.0178 13.9201 29.544 13.9564 24.034C13.9926 17.8352 15.7327 12.2164 20.1552 7.72133C24.4327 3.37128 29.9065 1.01501 35.8516 0.652507C45.4217 0.108752 55.028 0.181252 64.6344 0C64.7431 0 64.8519 0.108751 65.0694 0.217502C65.0694 7.50382 65.0694 14.8264 65.0694 22.3302C64.3806 22.3665 63.7281 22.4027 63.1119 22.4027C58.7618 22.4027 54.4118 22.4027 50.0617 22.4027C45.6754 22.439 43.1017 25.049 43.1017 29.3628C43.1017 33.4591 43.1017 37.5916 43.1379 41.6879C43.1379 41.7967 43.2104 41.9054 43.3192 42.3042C50.4967 42.3042 57.7468 42.3042 65.3594 42.3042C64.4169 49.663 63.5469 56.6956 62.6044 63.9819C56.043 63.9819 49.6267 63.9819 43.0292 63.9819C43.0292 85.4421 43.0292 106.685 43.0292 128C33.2778 127.927 23.7802 127.927 13.9564 127.927Z" fill="#8A2425"/>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__icon">
+                        <svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M128 23.294C123.297 25.436 118.233 26.884 112.921 27.531C118.345 24.203 122.508 18.925 124.469 12.639C119.39 15.721 113.778 17.963 107.782 19.165C103.004 13.934 96.174 10.667 88.616 10.667C74.123 10.667 62.365 22.724 62.365 37.594C62.365 39.705 62.59 41.754 63.041 43.727C41.217 42.601 21.871 31.892 8.91005 15.582C6.64905 19.573 5.35605 24.203 5.35605 29.134C5.35605 38.472 9.99205 46.715 17.039 51.546C12.742 51.415 8.68405 50.19 5.13805 48.187V48.518C5.13805 61.569 14.191 72.455 26.212 74.921C24.011 75.553 21.689 75.869 19.292 75.869C17.602 75.869 15.949 75.707 14.348 75.391C17.691 86.085 27.383 93.874 38.878 94.082C29.892 101.309 18.563 105.615 6.26405 105.615C4.14505 105.615 2.04905 105.492 -0.00195312 105.245C11.621 112.872 25.43 117.333 40.253 117.333C88.562 117.333 114.97 76.307 114.97 40.721C114.97 39.55 114.947 38.379 114.902 37.231C120.036 33.433 124.491 28.695 128 23.294Z" fill="#8A2425"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="128" height="128" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__icon">
+                        <svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M127.864 63.9786C127.864 72.9516 127.684 81.9503 127.916 90.9232C128.302 106.806 118.324 119.08 105.612 124.546C100.507 126.738 95.1439 127.898 89.6003 127.898C72.2475 127.924 54.8689 128.156 37.5161 127.82C24.4435 127.563 13.6914 122.096 5.98195 111.319C1.93382 105.646 0 99.1999 0 92.2124C0 73.7251 0 55.2636 0 36.7762C0 21.6925 7.34851 11.1467 20.3953 4.28808C26.0679 1.32289 32.2303 0.0594617 38.6506 0.0336774C55.4877 0.0336774 72.3506 -0.0694597 89.1877 0.0852459C102.26 0.188383 113.167 5.19053 121.212 15.7105C125.698 21.5893 127.864 28.3448 127.864 35.7707C127.864 45.1561 127.864 54.5674 127.864 63.9786ZM9.51439 63.9786C9.51439 73.4415 9.51439 82.8785 9.51439 92.3413C9.51439 96.5699 10.4942 100.541 12.6859 104.125C18.4357 113.536 27.125 118.126 37.9029 118.306C55.2041 118.564 72.5311 118.409 89.8581 118.358C94.1125 118.358 98.238 117.481 102.08 115.65C112.548 110.648 118.401 102.681 118.35 90.7169C118.247 72.4101 118.324 54.1033 118.324 35.7964C118.324 30.6138 116.854 25.8695 113.786 21.6925C107.856 13.6736 99.6562 9.72856 89.8581 9.62542C72.5827 9.41915 55.3072 9.54807 38.0318 9.57385C34.3446 9.57385 30.7864 10.3216 27.3313 11.6108C17.8427 15.1433 9.02449 24.0904 9.43704 37.2661C9.74645 46.1875 9.51439 55.0831 9.51439 63.9786Z" fill="#8A2425"/>
+                            <path d="M64.074 91.3099C47.4432 91.3099 34.0353 78.0568 34.0096 61.5549C33.9838 45.3108 47.4947 32.0061 64.0224 32.0061C80.6017 31.9804 94.0611 45.2592 94.0869 61.6323C94.0869 77.9795 80.6533 91.2841 64.074 91.3099ZM64.074 81.7698C75.3933 81.7698 84.5725 72.7195 84.5467 61.5807C84.5209 50.545 75.3417 41.5205 64.074 41.5205C52.7547 41.5205 43.5239 50.5192 43.5239 61.6323C43.5497 72.771 52.7547 81.7955 64.074 81.7698Z" fill="#8A2425"/>
+                            <path d="M97.5677 22.9817C101.049 22.9817 103.885 25.9469 103.885 29.5825C103.859 33.218 100.997 36.1574 97.5161 36.1317C94.0868 36.1059 91.2763 33.1665 91.2763 29.6082C91.2505 25.9727 94.0868 22.9817 97.5677 22.9817Z" fill="#8A2425"/>
+                        </svg>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+    integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="
+    crossorigin="anonymous"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

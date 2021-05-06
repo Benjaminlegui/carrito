@@ -1,0 +1,49 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: linear-gradient(to left bottom, rgba(255,255,255,0.2), rgba(255,255,255, 0.45));
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+
+    &__copyright {
+        p {
+            font-size: 12px;
+            color: $secondary;
+        }
+    }
+
+    &__icon {
+        height: 20px;
+        margin-right: 20px;
+        transition: all .3s;
+
+        &:last-child {
+            margin-right: initial;
+        }
+
+        svg {
+            height: 100%;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        @include respond-below(sm) {
+            margin-top: 10px;
+        }
+    }
+
+    @include respond-below(sm) {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 25px;
+    }
+}

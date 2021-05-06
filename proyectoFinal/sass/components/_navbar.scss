@@ -1,0 +1,184 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    color: $secondary;
+    z-index: 5;
+    top: 15px;
+    left: 50%;
+    max-width: 90%;
+    transform: translateX(-50%);
+    max-width: 1124px;
+
+    &__hamburger {
+        width: 40px;
+        height: 30px;
+        position: relative;
+
+        &-line {
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            background: linear-gradient(to left bottom, rgba(255,255,255,0.12), rgba(255,255,255, 0.45));
+            border-radius: 30px;
+            backdrop-filter: blur( 5px );
+            border: 1px solid rgba($color: $white, $alpha: 0.15);
+            top: 0;
+            left: 0;
+            
+            &:nth-child(2) {
+                transform: translateY(-50%);
+                top: 50%;
+            }
+            
+            &:nth-child(3) {
+                transform: translateY(-100%);
+                top: 100%;
+            }
+        }
+    }
+
+    &__close {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(to left bottom, rgba(255,255,255,0.12), rgba(255,255,255, 0.45));
+        backdrop-filter: blur( 5px );
+        border: 1px solid rgba($color: $white, $alpha: 0.15);
+        margin-top: 50px;
+        position: relative;
+
+        &-line {
+            width: 75%;
+            height: 5px;
+            background-color: $secondary;
+            border-radius: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &:nth-child(1) {
+                transform:  translate(-50%, -50%) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                transform:  translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+        background: linear-gradient(to left bottom, rgba(255,255,255,0.12), rgba(255,255,255, 0.45));
+        border-radius: 30px;
+        backdrop-filter: blur( 5px );
+        border: 1px solid rgba($color: $white, $alpha: 0.15);
+        padding: 10px 40px;
+    }
+    
+    &__logo {
+        max-width: 70px;
+        display: block;
+
+        img {
+            width: 100%;
+        }
+
+        @include respond-below(sm) {
+            max-width: 55px;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        @include respond-below(sm) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            background: linear-gradient(to left bottom, rgba(255,255,255,0.12), rgba(255,255,255, 0.45));
+            backdrop-filter: blur( 15px );
+            border: 1px solid rgba($color: $white, $alpha: 0.15);
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-100%);
+            transition: all .5s;
+            pointer-events: none;
+
+            &.active {
+                transform: translateY(0);
+                pointer-events: initial;
+            }
+        }
+    }
+
+    &__list-item {
+        margin-right: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all .3s;
+        padding: 10px 20px;
+        position: relative;
+        
+        &::after {
+            content: '';
+            border-radius: 150px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to left bottom, rgba(255,255,255,0.12), rgba(255,255,255, 0.45));
+            backdrop-filter: blur( 5px );
+            border: 1px solid rgba($color: $white, $alpha: 0.15);
+            opacity: 0;
+            transition: all .3s;
+            z-index: -1;
+        }
+
+        &:hover,
+        &:focus {
+            color: $secondary;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &:last-child {
+            margin-right: initial;
+        }
+
+        li {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @include respond-below(sm) {
+            font-size: 20px;
+            font-weight: map-get($map: $font-weights, $key: 'bold');
+            margin-right: initial;
+            margin-bottom: 30px;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    @include respond-below(sm) {
+        left: 0;
+        transform: none;
+    }
+}

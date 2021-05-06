@@ -1,0 +1,40 @@
+// WorkSans
+@font-face {
+    font-family: Poppins;
+    font-display: swap;
+    font-weight: 300;
+    src: local('../fonts/Poppins-Light.ttf'),
+    url('../fonts/Poppins-Light.ttf') format('woff2'),
+    url('../fonts/Poppins-Light.ttf') format('woff'),
+    url('../fonts/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-display: swap;
+    font-weight: 400;
+    src: local('../fonts/Poppins-Regular.ttf'),
+    url('../fonts/Poppins-Regular.ttf') format('woff2'),
+    url('../fonts/Poppins-Regular.ttf') format('woff'),
+    url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-display: swap;
+    font-weight: 600;
+    src: local('../fonts/Poppins-SemiBold.ttf'),
+    url('../fonts/Poppins-SemiBold.ttf') format('woff2'),
+    url('../fonts/Poppins-SemiBold.ttf') format('woff'),
+    url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-display: swap;
+    font-weight: 700;
+    src: local('../fonts/Poppins-Bold.ttf'),
+    url('../fonts/Poppins-Bold.ttf') format('woff2'),
+    url('../fonts/Poppins-Bold.ttf') format('woff'),
+    url('../fonts/Poppins-Bold.ttf') format('truetype');
+}

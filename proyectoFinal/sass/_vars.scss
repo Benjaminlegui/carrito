@@ -1,0 +1,38 @@
+$white: #FFFFFF;
+$black: #000000;
+
+$primary: #fb79a1;
+$secondary: #8a2425;
+$tertiary: #E0FBFC;
+$purple: #9381FF;
+$orchid: #9649CB;
+
+
+$global-font-size: 16px;
+$font: Poppins, sans-serif;
+
+$font-weights: (
+	'light': 300,
+	'regular': 400,
+	'semi-bold': 600,
+	'bold': 700,
+);
+
+$global-transition: all 0.3s ease-in;
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1282px
+);
+
+$grid-gutter-width: 26px; //around each col (gets divided by 2)
+$mobile-outside-gutter-width: 28px; //on each side (both sides have this much)
+
+$padding-options: (
+	'none': 0,
+	'small': 30px,
+	'default': 60px,
+	'large': 110px,
+);
